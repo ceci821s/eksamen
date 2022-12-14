@@ -6,6 +6,521 @@
   margin: 0;
 }
 
+button {
+  background-color: var(--background-color);
+  border: none;
+}
+
+/* farveskift mobil */
+#sort {
+  width: 75px;
+  height: 40px;
+  top: 27px;
+  left: 31px;
+  animation-name: blink;
+  animation: blink 5s infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  position: absolute;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#sol {
+  width: 75px;
+  height: 40px;
+  position: absolute;
+  top: 27px;
+  left: 31px;
+  animation-name: blink1;
+  animation: blink1 5s infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  position: absolute;
+}
+@keyframes blink1 {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#graes {
+  width: 75px;
+  height: 40px;
+  position: absolute;
+  top: 27px;
+  left: 31px;
+  animation-name: blink2;
+  animation: blink2 5s infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  position: absolute;
+}
+@keyframes blink2 {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#himmel {
+  width: 75px;
+  height: 40px;
+  position: absolute;
+  top: 27px;
+  left: 31px;
+  animation-name: blink3;
+  animation: blink3 5s infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  position: absolute;
+}
+@keyframes blink3 {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#rust {
+  width: 75px;
+  height: 40px;
+  position: absolute;
+  top: 27px;
+  left: 31px;
+  animation-name: blink4;
+  animation: blink4 5s infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  position: absolute;
+}
+@keyframes blink4 {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.burger_ikon {
+  width: 40px;
+  height: 40px;
+}
+.navigation_mobil {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  height: 96px;
+  align-items: center;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.navigation_desktop {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .navigation_mobil {
+    display: none;
+  }
+  .navigation_desktop {
+    display: block;
+    background-color: var(--background-color);
+    border-bottom: 2px solid black;
+    /* rigtig afstand fra figma 
+      height: 286px;*/
+  }
+  .navigation_under_logo {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    padding-top: var(--l-spacing-desktop);
+    padding-bottom: var(--s-spacing-desktop);
+    list-style: none;
+    font-size: var(--header_text_desktop);
+  }
+  .main_nav {
+    display: flex;
+    list-style: none;
+    gap: var(--xxl-spacing-desktop);
+    padding-left: var(--xxl-spacing-desktop);
+  }
+  .sortiment_pil {
+    display: flex;
+  }
+
+  .secondary_nav {
+    list-style: none;
+    display: flex;
+    gap: var(--s-spacing-desktop);
+    padding-right: var(--xxl-spacing-desktop);
+  }
+  .person {
+    width: 40px;
+    height: 40px;
+  }
+  .shopping {
+    width: 40px;
+    height: 40px;
+  }
+  .search {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo_center {
+    display: flex;
+    justify-content: center;
+    /* rigtige afstand fra figma
+      padding-top: var(--xl-spacing-desktop); */
+    padding-top: var(--l-spacing-desktop);
+  }
+
+  /* farveskift desktop  */
+  #sort {
+    width: 446px;
+    height: 33px;
+    animation-name: blink;
+    animation: blink 5s infinite;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    position: absolute;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    1% {
+      opacity: 1;
+    }
+    24% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    74% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #sol {
+    width: 446px;
+    height: 33px;
+    animation-name: blink1;
+    animation: blink1 5s infinite;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    position: absolute;
+  }
+  @keyframes blink1 {
+    0% {
+      opacity: 0;
+    }
+    1% {
+      opacity: 0;
+    }
+    24% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    49% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    74% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #graes {
+    width: 446px;
+    height: 33px;
+    animation-name: blink2;
+    animation: blink2 5s infinite;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    position: absolute;
+  }
+  @keyframes blink2 {
+    0% {
+      opacity: 0;
+    }
+    1% {
+      opacity: 0;
+    }
+    24% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    74% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #himmel {
+    width: 446px;
+    height: 33px;
+    animation-name: blink3;
+    animation: blink3 5s infinite;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    position: absolute;
+  }
+  @keyframes blink3 {
+    0% {
+      opacity: 0;
+    }
+    1% {
+      opacity: 0;
+    }
+    24% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    74% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  #rust {
+    width: 446px;
+    height: 33px;
+    animation-name: blink4;
+    animation: blink4 5s infinite;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    position: absolute;
+  }
+  @keyframes blink4 {
+    0% {
+      opacity: 0;
+    }
+    1% {
+      opacity: 0;
+    }
+    24% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    74% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 :root {
   /* MEDIA QUERY */
   --media-desktop: 900px;
@@ -253,4 +768,3 @@
   --radius-desktop: 5px;
   --border: 2px;
 }
-
